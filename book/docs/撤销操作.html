@@ -17,11 +17,27 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
                 
             
                 
@@ -49,6 +65,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -61,6 +78,23 @@
     
     
     <link rel="prev" href="提交历史.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon.ico">
+        
     
 
     </head>
@@ -558,19 +592,15 @@
                                 
                                 <h1 id="&#x64A4;&#x9500;&#x64CD;&#x4F5C;">&#x64A4;&#x9500;&#x64CD;&#x4F5C;</h1>
 <p>&#x5728;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x4F60;&#x90FD;&#x6709;&#x53EF;&#x80FD;&#x60F3;&#x8981;&#x64A4;&#x6D88;&#x67D0;&#x4E9B;&#x64CD;&#x4F5C;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x6709;&#x4E9B;&#x64A4;&#x6D88;&#x64CD;&#x4F5C;&#x662F;&#x4E0D;&#x53EF;&#x9006;&#x7684;&#x3002;&#x8FD9;&#x662F;&#x5728;&#x4F7F;&#x7528; Git &#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4F1A;&#x56E0;&#x4E3A;&#x64CD;&#x4F5C;&#x5931;&#x8BEF;&#x800C;&#x5BFC;&#x81F4;&#x4E4B;&#x524D;&#x7684;&#x5DE5;&#x4F5C;&#x4E22;&#x5931;&#x7684;&#x5C11;&#x6709;&#x7684;&#x51E0;&#x4E2A;&#x5730;&#x65B9;&#x4E4B;&#x4E00;&#x3002;&#x6709;&#x65F6;&#x5019;&#x4F60;&#x63D0;&#x4EA4;&#x5B8C;&#x4E86;&#x624D;&#x53D1;&#x73B0;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x5199;&#x9519;&#x4E86;&#xFF0C;&#x6216;&#x8005;&#x6F0F;&#x6389;&#x4E86;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;&#x3002; &#x6B64;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x4F1A;&#x5C06;&#x6682;&#x5B58;&#x533A;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x63D0;&#x4EA4;&#x3002;&#x5982;&#x679C;&#x81EA;&#x4E0A;&#x6B21;&#x63D0;&#x4EA4;&#x4EE5;&#x6765;&#x4F60;&#x8FD8;&#x672A;&#x505A;&#x4EFB;&#x4F55;&#x4FEE;&#x6539;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x4E0A;&#x6B21;&#x63D0;&#x4EA4;&#x540E;&#x9A6C;&#x4E0A;&#x6267;&#x884C;&#x4E86;&#x6B64;&#x547D;&#x4EE4;&#xFF0C;&#x90A3;&#x4E48;&#x5FEB;&#x7167;&#x4F1A;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#xFF0C;&#x800C;&#x4F60;&#x6240;&#x4FEE;&#x6539;&#x7684;&#x53EA;&#x662F;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x3002;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x542F;&#x52A8;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E4B;&#x524D;&#x7684;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x3002;&#x7F16;&#x8F91;&#x540E;&#x4FDD;&#x5B58;&#x4F1A;&#x8986;&#x76D6;&#x539F;&#x6765;&#x7684;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x3002;</p>
-<pre><code class="lang-shell">git commit --amend
-</code></pre>
-<p>&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x63D0;&#x4EA4;&#x540E;&#x53D1;&#x73B0;&#x5FD8;&#x8BB0;&#x4E86;&#x6682;&#x5B58;&#x4E86; <code>FORGOTTEN.md</code> &#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;&#x6700;&#x7EC8;&#x4F60;&#x53EA;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x63D0;&#x4EA4;&#x5C06;&#x4EE3;&#x66FF;&#x7B2C;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
-<pre><code class="lang-shell">git add FORGOTTEN.md
+<pre class="language-"><code>git commit --amend
+</code></pre><p>&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x63D0;&#x4EA4;&#x540E;&#x53D1;&#x73B0;&#x5FD8;&#x8BB0;&#x4E86;&#x6682;&#x5B58;&#x4E86; <code>FORGOTTEN.md</code> &#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;&#x6700;&#x7EC8;&#x4F60;&#x53EA;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x63D0;&#x4EA4;&#x5C06;&#x4EE3;&#x66FF;&#x7B2C;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<pre class="language-"><code>git add FORGOTTEN.md
 git commit --amend
-</code></pre>
-<p>&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x5DF2;&#x7ECF;&#x4FEE;&#x6539;&#x4E86;&#x4E24;&#x4E2A;&#x6587;&#x4EF6; <code>FILE1.md</code> &#x548C; <code>FILE2.md</code> &#x5E76;&#x4E14;&#x60F3;&#x8981;&#x5C06;&#x5B83;&#x4EEC;&#x4F5C;&#x4E3A;&#x4E24;&#x6B21;&#x72EC;&#x7ACB;&#x7684;&#x4FEE;&#x6539;&#x63D0;&#x4EA4;&#xFF0C;&#x4F46;&#x662F;&#x5374;&#x610F;&#x5916;&#x5730;&#x6682;&#x5B58;&#x4E86;&#x5B83;&#x4EEC;&#x4E24;&#x4E2A;&#x3002;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x53D6;&#x6D88;&#x6682;&#x5B58;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6587;&#x4EF6; <code>FILE2.md</code> &#x3002;</p>
-<pre><code class="lang-shell">git reset HEAD FILE2.md
-</code></pre>
-<p>&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x5DF2;&#x7ECF;&#x4FEE;&#x6539;&#x4E86; <code>README.md</code> &#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x53C8;&#x7A81;&#x7136;&#x4E0D;&#x60F3;&#x4FDD;&#x7559;&#x5BF9; <code>README.md</code> &#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;&#x4E86;&#x3002;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x65B9;&#x4FBF;&#x5730;&#x64A4;&#x6D88;&#x4FEE;&#x6539;&#xFF0C;&#x5C06;&#x5B83;&#x8FD8;&#x539F;&#x6210;&#x4E0A;&#x6B21;&#x63D0;&#x4EA4;&#x65F6;&#x7684;&#x6837;&#x5B50;&#x3002;</p>
-<pre><code class="lang-shell">git checkout -- README.md
-</code></pre>
-<p>&#x5728; Git &#x4E2D;&#x4EFB;&#x4F55;&#x5DF2;&#x63D0;&#x4EA4;&#x7684;&#x4E1C;&#x897F;&#x51E0;&#x4E4E;&#x603B;&#x662F;&#x53EF;&#x4EE5;&#x6062;&#x590D;&#x7684;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x4EFB;&#x4F55;&#x4F60;&#x672A;&#x63D0;&#x4EA4;&#x7684;&#x4E1C;&#x897F;&#x4E22;&#x5931;&#x540E;&#x5F88;&#x53EF;&#x80FD;&#x518D;&#x4E5F;&#x627E;&#x4E0D;&#x5230;&#x4E86;&#x3002;</p>
+</code></pre><p>&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x5DF2;&#x7ECF;&#x4FEE;&#x6539;&#x4E86;&#x4E24;&#x4E2A;&#x6587;&#x4EF6; <code>FILE1.md</code> &#x548C; <code>FILE2.md</code> &#x5E76;&#x4E14;&#x60F3;&#x8981;&#x5C06;&#x5B83;&#x4EEC;&#x4F5C;&#x4E3A;&#x4E24;&#x6B21;&#x72EC;&#x7ACB;&#x7684;&#x4FEE;&#x6539;&#x63D0;&#x4EA4;&#xFF0C;&#x4F46;&#x662F;&#x5374;&#x610F;&#x5916;&#x5730;&#x6682;&#x5B58;&#x4E86;&#x5B83;&#x4EEC;&#x4E24;&#x4E2A;&#x3002;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x53D6;&#x6D88;&#x6682;&#x5B58;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6587;&#x4EF6; <code>FILE2.md</code> &#x3002;</p>
+<pre class="language-"><code>git reset HEAD FILE2.md
+</code></pre><p>&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x5DF2;&#x7ECF;&#x4FEE;&#x6539;&#x4E86; <code>README.md</code> &#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x53C8;&#x7A81;&#x7136;&#x4E0D;&#x60F3;&#x4FDD;&#x7559;&#x5BF9; <code>README.md</code> &#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;&#x4E86;&#x3002;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x65B9;&#x4FBF;&#x5730;&#x64A4;&#x6D88;&#x4FEE;&#x6539;&#xFF0C;&#x5C06;&#x5B83;&#x8FD8;&#x539F;&#x6210;&#x4E0A;&#x6B21;&#x63D0;&#x4EA4;&#x65F6;&#x7684;&#x6837;&#x5B50;&#x3002;</p>
+<pre class="language-"><code>git checkout -- README.md
+</code></pre><p>&#x5728; Git &#x4E2D;&#x4EFB;&#x4F55;&#x5DF2;&#x63D0;&#x4EA4;&#x7684;&#x4E1C;&#x897F;&#x51E0;&#x4E4E;&#x603B;&#x662F;&#x53EF;&#x4EE5;&#x6062;&#x590D;&#x7684;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x4EFB;&#x4F55;&#x4F60;&#x672A;&#x63D0;&#x4EA4;&#x7684;&#x4E1C;&#x897F;&#x4E22;&#x5931;&#x540E;&#x5F88;&#x53EF;&#x80FD;&#x518D;&#x4E5F;&#x627E;&#x4E0D;&#x5230;&#x4E86;&#x3002;</p>
 
                                 
                                 </section>
@@ -614,7 +644,7 @@ git commit --amend
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"撤销操作","level":"1.1.12","depth":2,"next":{"title":"查看分支","level":"1.1.13","depth":2,"path":"docs/查看分支.md","ref":"docs/查看分支.md","articles":[]},"previous":{"title":"提交历史","level":"1.1.11","depth":2,"path":"docs/提交历史.md","ref":"docs/提交历史.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Git","language":"zh-hans","gitbook":">=3.0.0","description":"Git 手册","direction":"ltr"},"file":{"path":"docs/撤销操作.md","mtime":"2019-11-15T12:44:01.375Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-21T10:35:46.468Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"撤销操作","level":"1.1.12","depth":2,"next":{"title":"查看分支","level":"1.1.13","depth":2,"path":"docs/查看分支.md","ref":"docs/查看分支.md","articles":[]},"previous":{"title":"提交历史","level":"1.1.11","depth":2,"path":"docs/提交历史.md","ref":"docs/提交历史.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.ico","appleTouchMore":{"120x120":"favicon.ico","180x180":"favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Git","language":"zh-hans","gitbook":">=3.0.0","description":"Git 手册","direction":"ltr"},"file":{"path":"docs/撤销操作.md","mtime":"2019-12-24T09:20:09.550Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-24T09:32:26.156Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -624,23 +654,35 @@ git commit --amend
     <script src="../gitbook/theme.js"></script>
     
         
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
         <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
         
     
         

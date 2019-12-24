@@ -2,13 +2,13 @@
 
 如果你想在 Linux 上用二进制安装程序来安装 Git ，可以使用发行版包含的基础软件包管理工具来安装。以 Fedora 为例，可以执行下面的命令来安装。
 
-```shell
+```
 sudo yum install git
 ```
 
 如果你在基于 Debian 的发行版上，可以执行下面的命令来安装。
 
-```shell
+```
 sudo apt-get install git
 ```
 
