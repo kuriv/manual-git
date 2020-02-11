@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>合并分支 · Git</title>
+        <title>Git Flow · Git</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -74,10 +74,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="删除分支.html" />
+    <link rel="next" href="使用镜像.html" />
     
     
-    <link rel="prev" href="创建分支.html" />
+    <link rel="prev" href="存储修改.html" />
     
 
     
@@ -319,7 +319,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.15" data-path="合并分支.html">
+        <li class="chapter " data-level="1.1.15" data-path="合并分支.html">
             
                 <a href="合并分支.html">
             
@@ -527,7 +527,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.31" data-path="Git Flow.html">
+        <li class="chapter active" data-level="1.1.31" data-path="Git Flow.html">
             
                 <a href="Git Flow.html">
             
@@ -588,7 +588,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >合并分支</a>
+        <a href=".." >Git Flow</a>
     </h1>
 </div>
 
@@ -603,10 +603,68 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5408;&#x5E76;&#x5206;&#x652F;">&#x5408;&#x5E76;&#x5206;&#x652F;</h1>
-<p>&#x5982;&#x679C;&#x4F60;&#x5728; <code>develop</code> &#x5206;&#x652F;&#x4E0A;&#x63D0;&#x4EA4;&#x4E86;&#x4FEE;&#x6539;&#xFF0C;&#x5E76;&#x4E14;&#x6253;&#x7B97;&#x5C06;&#x4FEE;&#x6539;&#x5408;&#x5E76;&#x5165; <code>master</code> &#x5206;&#x652F;&#x3002;&#x4F60;&#x53EA;&#x9700;&#x8981;&#x68C0;&#x51FA;&#x5230; <code>master</code> &#x5206;&#x652F;&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
-<pre class="language-"><code>git merge develop
-</code></pre><p>&#x6709;&#x65F6;&#x5019;&#x5408;&#x5E76;&#x64CD;&#x4F5C;&#x4E0D;&#x4F1A;&#x5982;&#x6B64;&#x987A;&#x5229;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5728;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x652F;&#x4E2D;&#xFF0C;&#x5BF9;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x540C;&#x4E00;&#x4E2A;&#x90E8;&#x5206;&#x8FDB;&#x884C;&#x4E86;&#x4E0D;&#x540C;&#x7684;&#x4FEE;&#x6539;&#xFF0C; Git &#x5C31;&#x6CA1;&#x6CD5;&#x5E72;&#x51C0;&#x7684;&#x5408;&#x5E76;&#x5B83;&#x4EEC;&#x3002;&#x6B64;&#x65F6; Git &#x867D;&#x7136;&#x505A;&#x4E86;&#x5408;&#x5E76;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x81EA;&#x52A8;&#x5730;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5408;&#x5E76;&#x63D0;&#x4EA4;&#x3002; Git &#x4F1A;&#x6682;&#x505C;&#x4E0B;&#x6765;&#xFF0C;&#x7B49;&#x5F85;&#x4F60;&#x53BB;&#x89E3;&#x51B3;&#x5408;&#x5E76;&#x4EA7;&#x751F;&#x7684;&#x51B2;&#x7A81;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x5408;&#x5E76;&#x51B2;&#x7A81;&#x540E;&#x7684;&#x4EFB;&#x610F;&#x65F6;&#x523B;&#x4F7F;&#x7528;&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;&#x547D;&#x4EE4;&#x6765;&#x67E5;&#x770B;&#x90A3;&#x4E9B;&#x56E0;&#x5305;&#x542B;&#x5408;&#x5E76;&#x51B2;&#x7A81;&#x800C;&#x5904;&#x4E8E;&#x672A;&#x5408;&#x5E76;&#x72B6;&#x6001;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x4EFB;&#x4F55;&#x56E0;&#x5305;&#x542B;&#x5408;&#x5E76;&#x51B2;&#x7A81;&#x800C;&#x6709;&#x5F85;&#x89E3;&#x51B3;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x90FD;&#x4F1A;&#x4EE5;&#x672A;&#x5408;&#x5E76;&#x72B6;&#x6001;&#x6807;&#x8BC6;&#x51FA;&#x6765;&#x3002; Git &#x4F1A;&#x5728;&#x6709;&#x51B2;&#x7A81;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x52A0;&#x5165;&#x6807;&#x51C6;&#x7684;&#x51B2;&#x7A81;&#x89E3;&#x51B3;&#x6807;&#x8BB0;&#xFF0C;&#x8FD9;&#x6837;&#x4F60;&#x53EF;&#x4EE5;&#x6253;&#x5F00;&#x8FD9;&#x4E9B;&#x5305;&#x542B;&#x51B2;&#x7A81;&#x7684;&#x6587;&#x4EF6;&#x7136;&#x540E;&#x624B;&#x52A8;&#x89E3;&#x51B3;&#x51B2;&#x7A81;&#x3002;&#x5728;&#x4F60;&#x89E3;&#x51B3;&#x4E86;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x91CC;&#x7684;&#x51B2;&#x7A81;&#x4E4B;&#x540E;&#xFF0C;&#x628A;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x653E;&#x5230;&#x6682;&#x5B58;&#x533A;&#x6765;&#x5C06;&#x5176;&#x6807;&#x8BB0;&#x4E3A;&#x51B2;&#x7A81;&#x5DF2;&#x89E3;&#x51B3;&#x3002;&#x4E00;&#x65E6;&#x6682;&#x5B58;&#x8FD9;&#x4E9B;&#x539F;&#x672C;&#x6709;&#x51B2;&#x7A81;&#x7684;&#x6587;&#x4EF6;&#xFF0C; Git &#x5C31;&#x4F1A;&#x5C06;&#x5B83;&#x4EEC;&#x6807;&#x8BB0;&#x4E3A;&#x51B2;&#x7A81;&#x5DF2;&#x89E3;&#x51B3;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5BF9;&#x7ED3;&#x679C;&#x611F;&#x5230;&#x6EE1;&#x610F;&#xFF0C;&#x5E76;&#x4E14;&#x786E;&#x5B9A;&#x4E4B;&#x524D;&#x6709;&#x51B2;&#x7A81;&#x7684;&#x7684;&#x6587;&#x4EF6;&#x90FD;&#x5DF2;&#x7ECF;&#x6682;&#x5B58;&#x4E86;&#xFF0C;&#x8FD9;&#x65F6;&#x4F60;&#x53EF;&#x4EE5;&#x63D0;&#x4EA4;&#x66F4;&#x65B0;&#x6765;&#x5B8C;&#x6210;&#x5408;&#x5E76;&#x63D0;&#x4EA4;&#x3002;</p>
+                                <h1 id="git-flow">Git Flow</h1>
+<ul>
+<li><a href="#git-flow-&#x5E38;&#x7528;&#x5206;&#x652F;">Git Flow &#x5E38;&#x7528;&#x5206;&#x652F;</a><ul>
+<li><a href="#master-&#x5206;&#x652F;">master &#x5206;&#x652F;</a></li>
+<li><a href="#develop-&#x5206;&#x652F;">develop &#x5206;&#x652F;</a></li>
+<li><a href="#feature-&#x5206;&#x652F;">feature &#x5206;&#x652F;</a></li>
+<li><a href="#release-&#x5206;&#x652F;">release &#x5206;&#x652F;</a></li>
+<li><a href="#hotfix-&#x5206;&#x652F;">hotfix &#x5206;&#x652F;</a></li>
+</ul>
+</li>
+<li><a href="#git-flow-&#x5982;&#x4F55;&#x4F7F;&#x7528;">Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;</a><ul>
+<li><a href="#mater--develop-&#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;">mater / develop &#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;</a></li>
+<li><a href="#feature-&#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;">feature &#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;</a></li>
+<li><a href="#release-&#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;">release &#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;</a></li>
+<li><a href="#hotfix-&#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;">hotfix &#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;</a></li>
+</ul>
+</li>
+</ul>
+<p>Git Flow &#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x53D1;&#x5E03;&#x7684;&#x5206;&#x652F;&#x6A21;&#x578B;&#xFF0C;&#x4E3A;&#x7BA1;&#x7406;&#x5177;&#x6709;&#x9884;&#x5B9A;&#x53D1;&#x5E03;&#x5468;&#x671F;&#x7684;&#x5927;&#x578B;&#x9879;&#x76EE;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5065;&#x58EE;&#x7684;&#x6846;&#x67B6;&#x3002;</p>
+<p><a href="Git%20Flow.png" data-lightbox="4aeb7fe7-71f1-48a4-8884-46055aa3a075" data-title="Git Flow"><img src="Git Flow.png" alt="Git Flow"></a></p>
+<h2 id="git-flow-&#x5E38;&#x7528;&#x5206;&#x652F;">Git Flow &#x5E38;&#x7528;&#x5206;&#x652F;</h2>
+<h3 id="master-&#x5206;&#x652F;">master &#x5206;&#x652F;</h3>
+<blockquote>
+<p>master &#x5206;&#x652F;&#x5305;&#x542B;&#x6700;&#x8FD1;&#x53D1;&#x5E03;&#x5230;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4EE5;&#x53CA;&#x6700;&#x8FD1;&#x53D1;&#x5E03;&#x7684; release &#xFF0C; &#x8FD9;&#x4E2A;&#x5206;&#x652F;&#x53EA;&#x80FD;&#x4ECE;&#x5176;&#x4ED6;&#x5206;&#x652F;&#x5408;&#x5E76;&#xFF0C;&#x4E0D;&#x80FD;&#x5728;&#x8FD9;&#x4E2A;&#x5206;&#x652F;&#x8FDB;&#x884C;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x3002;</p>
+</blockquote>
+<h3 id="develop-&#x5206;&#x652F;">develop &#x5206;&#x652F;</h3>
+<blockquote>
+<p>develop &#x5206;&#x652F;&#x662F;&#x4E3B;&#x5F00;&#x53D1;&#x5206;&#x652F;&#xFF0C;&#x5305;&#x542B;&#x6240;&#x6709;&#x8981;&#x53D1;&#x5E03;&#x5230;&#x4E0B;&#x4E00;&#x4E2A; release &#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x4E2A;&#x5206;&#x652F;&#x4E3B;&#x8981;&#x4E0E;&#x5176;&#x4ED6;&#x5206;&#x652F;&#x5408;&#x5E76;&#xFF0C;&#x6BD4;&#x5982; feature &#x5206;&#x652F;&#x3002;</p>
+</blockquote>
+<h3 id="feature-&#x5206;&#x652F;">feature &#x5206;&#x652F;</h3>
+<blockquote>
+<p>feature &#x5206;&#x652F;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x5F00;&#x53D1;&#x65B0;&#x529F;&#x80FD;&#xFF0C;&#x4E00;&#x65E6;&#x5F00;&#x53D1;&#x5B8C;&#x6210;&#xFF0C;&#x5C06;&#x5408;&#x5E76;&#x56DE; develop &#x5206;&#x652F;&#x5E76;&#x8FDB;&#x5165;&#x4E0B;&#x4E00;&#x4E2A; release &#x3002;</p>
+</blockquote>
+<h3 id="release-&#x5206;&#x652F;">release &#x5206;&#x652F;</h3>
+<blockquote>
+<p>&#x5F53;&#x9700;&#x8981;&#x53D1;&#x5E03;&#x4E00;&#x4E2A;&#x65B0; release &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x57FA;&#x4E8E; develop &#x5206;&#x652F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; release &#xFF0C;&#x5B8C;&#x6210; release &#x540E;&#xFF0C;&#x5408;&#x5E76;&#x5230; master &#x5206;&#x652F;&#x6216; develop &#x5206;&#x652F;&#x3002;</p>
+</blockquote>
+<h3 id="hotfix-&#x5206;&#x652F;">hotfix &#x5206;&#x652F;</h3>
+<blockquote>
+<p>&#x5F53;&#x5728; master &#x5206;&#x652F;&#x53D1;&#x73B0;&#x65B0;&#x7684; bug &#x65F6;&#xFF0C;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; hotfix &#x5206;&#x652F;&#xFF0C;&#x4FEE;&#x590D;&#x5B8C; bug &#x540E; &#xFF0C;&#x5408;&#x5E76;&#x56DE; master &#x5206;&#x652F;&#x6216; develop &#x5206;&#x652F;&#xFF0C;&#x6240;&#x6709; hotfix &#x5206;&#x652F;&#x7684;&#x6539;&#x52A8;&#x90FD;&#x4F1A;&#x8FDB;&#x5165;&#x4E0B;&#x4E00;&#x4E2A; release &#x3002;</p>
+</blockquote>
+<h2 id="git-flow-&#x5982;&#x4F55;&#x4F7F;&#x7528;">Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;</h2>
+<h3 id="mater--develop-&#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;">mater / develop &#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;</h3>
+<p><a href="Git%20Flow%20&#x5982;&#x4F55;&#x4F7F;&#x7528;-1.png" data-lightbox="8f521be1-856b-4845-91b6-d701fbd27820" data-title="Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;"><img src="Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;-1.png" alt="Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;"></a></p>
+<blockquote>
+<p>&#x6240;&#x6709;&#x5728; master &#x5206;&#x652F;&#x4E0A;&#x7684;&#x63D0;&#x4EA4;&#x5E94;&#x8BE5;&#x521B;&#x5EFA;&#x6807;&#x7B7E;&#xFF0C;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B; master &#x5206;&#x652F;&#x4E0D;&#x5B58;&#x5728;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#xFF0C; develop &#x5206;&#x652F;&#x57FA;&#x4E8E; master &#x5206;&#x652F;&#x521B;&#x5EFA;&#x3002;</p>
+</blockquote>
+<h3 id="feature-&#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;">feature &#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;</h3>
+<p><a href="Git%20Flow%20&#x5982;&#x4F55;&#x4F7F;&#x7528;-2.png" data-lightbox="006c3166-f147-4141-b2c0-2b92fc195dd0" data-title="Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;"><img src="Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;-2.png" alt="Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;"></a></p>
+<blockquote>
+<p>feature &#x5206;&#x652F;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5FC5;&#x987B;&#x5408;&#x5E76;&#x56DE; develop &#x5206;&#x652F;&#xFF0C;&#x5408;&#x5E76;&#x5B8C;&#x5206;&#x652F;&#x540E;&#x4E00;&#x822C;&#x4F1A;&#x5220;&#x9664;&#x8FD9;&#x4E2A; feature &#x5206;&#x652F;&#xFF0C;&#x6BD5;&#x7ADF;&#x4FDD;&#x7559;&#x4E0B;&#x6765;&#x610F;&#x4E49;&#x4E5F;&#x4E0D;&#x5927;&#x3002;</p>
+</blockquote>
+<h3 id="release-&#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;">release &#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;</h3>
+<p><a href="Git%20Flow%20&#x5982;&#x4F55;&#x4F7F;&#x7528;-3.png" data-lightbox="03374788-214a-4ac5-a502-7de1921d4c3b" data-title="Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;"><img src="Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;-3.png" alt="Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;"></a></p>
+<blockquote>
+<p>release &#x5206;&#x652F;&#x57FA;&#x4E8E; develop &#x5206;&#x652F;&#x521B;&#x5EFA;&#xFF0C;&#x521B;&#x5EFA;&#x5B8C; release &#x5206;&#x652F;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x4E2A; release &#x5206;&#x652F;&#x4E0A;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x4FEE;&#x6539; bug &#x7B49;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x5176;&#x4ED6;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E; develop &#x5206;&#x652F;&#x521B;&#x5EFA;&#x65B0;&#x7684; feature &#xFF0C;&#x6CE8;&#x610F;&#xFF0C;&#x4E00;&#x65E6;&#x521B;&#x5EFA;&#x597D; release &#x5206;&#x652F;&#x4E4B;&#x540E;&#x4E0D;&#x8981;&#x4ECE; develop &#x5206;&#x652F;&#x4E0A;&#x5408;&#x5E76;&#x65B0;&#x7684;&#x6539;&#x52A8;&#x5230; release &#x5206;&#x652F;&#x3002;&#x53D1;&#x5E03; release &#x5206;&#x652F;&#x65F6;&#xFF0C;&#x5408;&#x5E76; release &#x5206;&#x652F;&#x5230; master &#x5206;&#x652F;&#x6216; develop &#x5206;&#x652F;&#xFF0C;&#x540C;&#x65F6;&#x5728; master &#x5206;&#x652F;&#x4E0A;&#x521B;&#x5EFA;&#x6807;&#x7B7E;&#x5E76;&#x8BB0;&#x4F4F; release &#x7248;&#x672C;&#x53F7;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x5220;&#x9664; release &#x5206;&#x652F;&#x4E86;&#x3002;</p>
+</blockquote>
+<h3 id="hotfix-&#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;">hotfix &#x5206;&#x652F;&#x7684;&#x4F7F;&#x7528;</h3>
+<p><a href="Git%20Flow%20&#x5982;&#x4F55;&#x4F7F;&#x7528;-4.png" data-lightbox="3871a9be-ef07-45c5-92e2-49e455ae4c84" data-title="Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;"><img src="Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;-4.png" alt="Git Flow &#x5982;&#x4F55;&#x4F7F;&#x7528;"></a></p>
+<blockquote>
+<p>hotfix &#x5206;&#x652F;&#x57FA;&#x4E8E; master &#x5206;&#x652F;&#x521B;&#x5EFA;&#xFF0C;&#x5F00;&#x53D1;&#x5B8C;&#x6BD5;&#x540E;&#x9700;&#x8981;&#x5408;&#x5E76;&#x56DE; master &#x5206;&#x652F;&#x6216; develop &#x5206;&#x652F;&#xFF0C;&#x540C;&#x65F6;&#x5728; master &#x5206;&#x652F;&#x4E0A;&#x521B;&#x5EFA;&#x6807;&#x7B7E;&#x3002;</p>
+</blockquote>
 
                                 
                                 </section>
@@ -634,12 +692,12 @@
 
             
                 
-                <a href="创建分支.html" class="navigation navigation-prev " aria-label="Previous page: 创建分支">
+                <a href="存储修改.html" class="navigation navigation-prev " aria-label="Previous page: 存储修改">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="删除分支.html" class="navigation navigation-next " aria-label="Next page: 删除分支">
+                <a href="使用镜像.html" class="navigation navigation-next " aria-label="Next page: 使用镜像">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -650,7 +708,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"合并分支","level":"1.1.15","depth":2,"next":{"title":"删除分支","level":"1.1.16","depth":2,"path":"docs/删除分支.md","ref":"docs/删除分支.md","articles":[]},"previous":{"title":"创建分支","level":"1.1.14","depth":2,"path":"docs/创建分支.md","ref":"docs/创建分支.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Git","language":"zh-hans","gitbook":">=3.0.0","description":"Git 手册","direction":"ltr"},"file":{"path":"docs/合并分支.md","mtime":"2019-12-24T09:21:29.316Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-11T06:33:22.795Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git Flow","level":"1.1.31","depth":2,"next":{"title":"使用镜像","level":"1.1.32","depth":2,"path":"docs/使用镜像.md","ref":"docs/使用镜像.md","articles":[]},"previous":{"title":"存储修改","level":"1.1.30","depth":2,"path":"docs/存储修改.md","ref":"docs/存储修改.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Git","language":"zh-hans","gitbook":">=3.0.0","description":"Git 手册","direction":"ltr"},"file":{"path":"docs/Git Flow.md","mtime":"2020-02-11T06:30:51.641Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-11T06:33:22.795Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
