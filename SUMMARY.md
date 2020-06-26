@@ -31,6 +31,7 @@
     * [别名](docs/别名.md)
     * [版本回退](docs/版本回退.md)
     * [存储修改](docs/存储修改.md)
+    * [自动部署](docs/自动部署.md)
     * [Git Flow](docs/Git Flow.md)
     * [使用镜像](docs/使用镜像.md)
 
