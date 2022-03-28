@@ -36,7 +36,7 @@
     "gitbook-plugin-search-pro": "^2.0.2",
     "gitbook-plugin-splitter": "0.0.8",
     "lodash": "^4.17.19",
-    "minimist": "^0.2.1",
+    "minimist": "^1.2.6",
     "prismjs": "^1.21.0"
   }
 }
