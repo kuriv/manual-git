@@ -1,13 +1,14 @@
 {
   "name": "manual-git",
-  "version": "1.0.10",
-  "description": "Git 手册",
+  "version": "1.0.11",
+  "description": "Git 是一个分布式版本控制系统。",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gitbook serve ./ ./book"
   },
   "repository": {
     "type": "git",
